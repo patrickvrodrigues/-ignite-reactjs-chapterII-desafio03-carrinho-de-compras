@@ -127,9 +127,6 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
       return;
     }
   };
-
-
-
   return (
     <CartContext.Provider
       value={{ cart, addProduct, removeProduct, updateProductAmount }}
