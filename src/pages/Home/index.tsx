@@ -34,14 +34,8 @@ const Home = (): JSX.Element => {
   useEffect(() => {
     async function loadProducts() {
       const productsAwait = (await api.get<ProductFormatted[]>('/products')).data;
-      // const stockAwait = (await api.get <)
-      // teste.map(product => {
-
-      // })
-      setProducts(productsAwait)
-
+      setProducts(productsAwait);
     }
-
     loadProducts();
   }, []);
 
